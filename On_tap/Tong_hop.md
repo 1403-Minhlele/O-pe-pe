@@ -302,6 +302,24 @@ class Phanso{
 
 - Lúc này ta chỉ cần `a = b + 1 hoặc a = 1 + b hoặc a = b + c` mà không cần khai bao từng phương thức toán tử cho từng tham số đầu vào. Cách này còn dùng được cho các toán tử khác.
 
+### Chuyển kiểu bằng toán tử chuyển kiểu ( Ít ứng dụng hơn)
+```cpp
+/* cú pháp operator Kieu_DL_can_chuyen(){
+    Doing something here to change type of variable
+}*/
+
+class Phanso{
+    private:
+        int tu, mau;
+    public:
+        // Phuong thuc thiep lap
+        operator float()
+        {
+            return (float)this -> tu / this -> mau;
+        }
+};
+
+```
 ---
 
 ## 9) Con trỏ this
