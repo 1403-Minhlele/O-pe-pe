@@ -4,9 +4,9 @@ classDiagram
         <<abstract>>
         #giaidoan : int[6]
         #name : string
-        +~Convat()
-        +Nhap() void*
-        +check_diff() bool*
+        +virtual ~Convat()
+        +virtual Nhap() void*
+        +virtual check_diff() bool*
         +get_name() string
         +get_giaidoan(int i) int
     }
